@@ -1,5 +1,5 @@
-function() {
-  
+(function() {
+    alert('test');
     var origOpen = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function() {
 
@@ -34,4 +34,4 @@ function() {
 
         origOpen.apply(this, arguments);
     };
-}
+})();
