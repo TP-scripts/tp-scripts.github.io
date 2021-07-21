@@ -1,4 +1,4 @@
-(function() {
+function() {
   
     var origOpen = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function() {
@@ -34,4 +34,4 @@
 
         origOpen.apply(this, arguments);
     };
-})();
+}
